@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн уроки для начальных классов - Наталья Николаевна Репетуева</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Индивидуальные онлайн уроки для начальных классов. Опытный преподаватель с 25-летним стажем." />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Основное меню навигации">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1 class="text-xl font-bold">Онлайн уроки</h1>
+            </div>
+            <button class="navbar-toggle" aria-label="Открыть меню навигации" aria-expanded="false" aria-controls="main-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu" id="main-menu">
+                <li><a href="#hero" class="navbar-link">Главная</a></li>
+                <li><a href="#about" class="navbar-link">О преподавателе</a></li>
+                <li><a href="#services" class="navbar-link">Услуги</a></li>
+                <li><a href="#schedule" class="navbar-link">Расписание</a></li>
+                <li><a href="#methods" class="navbar-link">Методики</a></li>
+                <li><a href="#reviews" class="navbar-link">Отзывы</a></li>
+                <li><a href="#contact" class="navbar-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content flex flex-col md:flex-row items-center">
+                <div class="hero-text md:w-1/2 mb-6 md:mb-0">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Онлайн уроки для начальных классов</h1>
+                    <p class="hero-subtitle mt-4 text-lg opacity-90">Индивидуальный подход к каждому ребенку. Качественное образование в удобном формате.</p>
+                    <div class="teacher-info mt-6">
+                        <h3 class="text-xl font-semibold">Наталья Николаевна Репетуева</h3>
+                        <p class="opacity-80">Учитель начальных классов • 25 лет опыта • Высшая категория</p>
+                    </div>
+                    <div class="hero-features mt-6 flex flex-wrap gap-4">
+                        <div class="feature flex items-center">
+                            <span class="feature-icon mr-2">📚</span>
+                            <span>Индивидуальный подход</span>
+                        </div>
+                        <div class="feature flex items-center">
+                            <span class="feature-icon mr-2">⏰</span>
+                            <span>Гибкое расписание</span>
+                        </div>
+                        <div class="feature flex items-center">
+                            <span class="feature-icon mr-2">🎮</span>
+                            <span>Интерактивные методики</span>
+                        </div>
+                    </div>
+                    <button 
+                        class="btn btn--primary btn--lg mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                        onclick="openBookingModal()">Записаться на урок</button>
+                </div>
+                <div class="hero-image md:w-1/2 flex justify-center">
+                    <div class="teacher-avatar w-40 h-40 rounded-full bg-blue-100 flex items-center justify-center">
+                        <span class="avatar-icon text-5xl">👩‍🏫</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section-title text-3xl font-bold mb-8">О преподавателе</h2>
+            <div class="about-content flex flex-col md:flex-row">
+                <div class="about-text md:w-2/3">
+                    <h3 class="text-2xl font-semibold">Наталья Николаевна Репетуева</h3>
+                    <p class="about-subtitle mt-2 italic text-gray-600">Учитель начальных классов с 25-летним опытом работы</p>
+                    <div class="about-details mt-4 space-y-3">
+                        <div class="detail"><strong>Образование:</strong> Педагогическое образование, высшая квалификационная категория</div>
+                        <div class="detail"><strong>Специализация:</strong> Учитель начальных классов</div>
+                        <div class="detail"><strong>Опыт работы:</strong> 25 лет</div>
+                    </div>
+                    <p class="mt-4">Я помогаю детям полюбить учебу и достигать отличных результатов. Использую современные методики обучения, адаптированные под особенности каждого ребенка.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" aria-labelledby="services-title">
+        <div class="container">
+            <h2 id="services-title" class="section-title text-3xl font-bold mb-8">Услуги и предметы</h2>
+            <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="service-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="service-icon text-3xl mb-3">📊</div>
+                    <h3 class="text-xl font-semibold mb-2">Математика</h3>
+                    <p class="mb-4">Развитие логического мышления, решение задач, изучение основ арифметики</p>
+                    <div class="service-meta flex justify-between text-sm text-gray-600">
+                        <span class="grade">1-4 класс</span>
+                        <span class="price">30 руб/час</span>
+                    </div>
+                </div>
+                <div class="service-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="service-icon text-3xl mb-3">📝</div>
+                    <h3 class="text-xl font-semibold mb-2">Русский язык</h3>
+                    <p class="mb-4">Правописание, грамматика, развитие речи, подготовка к диктантам</p>
+                    <div class="service-meta flex justify-between text-sm text-gray-600">
+                        <span class="grade">1-4 класс</span>
+                        <span class="price">30 руб/час</span>
+                    </div>
+                </div>
+                <div class="service-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="service-icon text-3xl mb-3">📖</div>
+                    <h3 class="text-xl font-semibold mb-2">Чтение</h3>
+                    <p class="mb-4">Техника чтения, понимание прочитанного, развитие словарного запаса</p>
+                    <div class="service-meta flex justify-between text-sm text-gray-600">
+                        <span class="grade">1-4 класс</span>
+                        <span class="price">30 руб/час</span>
+                    </div>
+                </div>
+                <div class="service-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="service-icon text-3xl mb-3">🌍</div>
+                    <h3 class="text-xl font-semibold mb-2">Окружающий мир</h3>
+                    <p class="mb-4">Изучение природы, общества, основ безопасности жизнедеятельности</p>
+                    <div class="service-meta flex justify-between text-sm text-gray-600">
+                        <span class="grade">1-4 класс</span>
+                        <span class="price">30 руб/час</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule" aria-labelledby="schedule-title">
+        <div class="container">
+            <h2 id="schedule-title" class="section-title text-3xl font-bold mb-8">Расписание</h2>
+            <div class="schedule-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Дни недели -->
+                <!-- Пример одного дня недели, остальные аналогично -->
+                <div class="schedule-day border p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-3">Понедельник</h3>
+                    <div class="time-slots flex flex-wrap gap-2">
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">9:00-9:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">10:00-10:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">11:00-11:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">12:00-12:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">13:00-13:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">14:00-14:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">15:00-15:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">16:00-16:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">17:00-17:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">18:00-18:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">19:00-19:45</span>
+                    </div>
+                </div>
+                <!-- Вторник -->
+                <div class="schedule-day border p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-3">Вторник</h3>
+                    <div class="time-slots flex flex-wrap gap-2">
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">9:00-9:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">10:00-10:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">11:00-11:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">12:00-12:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">13:00-13:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">14:00-14:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">15:00-15:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">16:00-16:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">17:00-17:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">18:00-18:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">19:00-19:45</span>
+                    </div>
+                </div>
+                <!-- Среда -->
+                <div class="schedule-day border p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-3">Среда</h3>
+                    <div class="time-slots flex flex-wrap gap-2">
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">9:00-9:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">10:00-10:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">11:00-11:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">12:00-12:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">13:00-13:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">14:00-14:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">15:00-15:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">16:00-16:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">17:00-17:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">18:00-18:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">19:00-19:45</span>
+                    </div>
+                </div>
+                <!-- Четверг -->
+                <div class="schedule-day border p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-3">Четверг</h3>
+                    <div class="time-slots flex flex-wrap gap-2">
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">9:00-9:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">10:00-10:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">11:00-11:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">12:00-12:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">13:00-13:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">14:00-14:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">15:00-15:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">16:00-16:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">17:00-17:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">18:00-18:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">19:00-19:45</span>
+                    </div>
+                </div>
+                <!-- Пятница -->
+                <div class="schedule-day border p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-3">Пятница</h3>
+                    <div class="time-slots flex flex-wrap gap-2">
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">9:00-9:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">10:00-10:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">11:00-11:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">12:00-12:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">13:00-13:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">14:00-14:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">15:00-15:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">16:00-16:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">17:00-17:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">18:00-18:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">19:00-19:45</span>
+                    </div>
+                </div>
+                <!-- Суббота -->
+                <div class="schedule-day border p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-3">Суббота</h3>
+                    <div class="time-slots flex flex-wrap gap-2">
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">9:00-9:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">10:00-10:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">11:00-11:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">12:00-12:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">13:00-13:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">14:00-14:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">15:00-15:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">16:00-16:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">17:00-17:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">18:00-18:45</span>
+                        <span class="time-slot available px-3 py-1 bg-green-100 text-green-800 rounded">19:00-19:45</span>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-legend mt-6 flex gap-4">
+                <span class="legend-item flex items-center">
+                    <span class="legend-color available w-4 h-4 bg-green-500 rounded-full mr-2"></span>
+                    Свободно
+                </span>
+                <span class="legend-item flex items-center">
+                    <span class="legend-color occupied w-4 h-4 bg-red-500 rounded-full mr-2"></span>
+                    Занято
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods Section -->
+    <section id="methods" class="methods" aria-labelledby="methods-title">
+        <div class="container">
+            <h2 id="methods-title" class="section-title text-3xl font-bold mb-8">Методики обучения</h2>
+            <div class="methods-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="method-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="method-icon text-3xl mb-3">👥</div>
+                    <h3 class="text-xl font-semibold mb-2">Индивидуальный подход</h3>
+                    <p>Учитываю особенности каждого ребенка, его темп обучения и интересы</p>
+                </div>
+                <div class="method-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="method-icon text-3xl mb-3">🎯</div>
+                    <h3 class="text-xl font-semibold mb-2">Игровые методики</h3>
+                    <p>Обучение через игру делает процесс увлекательным и эффективным</p>
+                </div>
+                <div class="method-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="method-icon text-3xl mb-3">💻</div>
+                    <h3 class="text-xl font-semibold mb-2">Интерактивные технологии</h3>
+                    <p>Использую современные образовательные платформы и материалы</p>
+                </div>
+                <div class="method-card border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="method-icon text-3xl mb-3">📋</div>
+                    <h3 class="text-xl font-semibold mb-2">ФГОС соответствие</h3>
+                    <p>Программа соответствует федеральным государственным стандартам</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+            <h2 id="reviews-title" class="section-title text-3xl font-bold mb-8">Отзывы родителей</h2>
+            <div class="reviews-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="review-card border p-6 rounded-lg shadow-sm">
+                    <div class="review-rating text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text mb-4">"Анна Петровна помогла моему сыну значительно улучшить успеваемость по математике. Очень терпеливый и внимательный педагог!"</p>
+                    <div class="review-author">
+                        <strong class="block">Мария Иванова</strong>
+                        <span class="text-gray-600">Дима, 3 класс</span>
+                    </div>
+                </div>
+                <div class="review-card border p-6 rounded-lg shadow-sm">
+                    <div class="review-rating text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text mb-4">"Дочке очень нравятся занятия. Учитель использует интересные методики, ребенок с удовольствием учится!"</p>
+                    <div class="review-author">
+                        <strong class="block">Алексей Петров</strong>
+                        <span class="text-gray-600">Соня, 2 класс</span>
+                    </div>
+                </div>
+                <div class="review-card border p-6 rounded-lg shadow-sm">
+                    <div class="review-rating text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text mb-4">"Готовимся к переходу в 5 класс. Анна Петровна систематизировала все знания, устранила пробелы. Рекомендую!"</p>
+                    <div class="review-author">
+                        <strong class="block">Екатерина Сидорова</strong>
+                        <span class="text-gray-600">Максим, 4 класс</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title text-3xl font-bold mb-8">Контакты</h2>
+            <div class="contact-content flex flex-col md:flex-row gap-8">
+                <div class="contact-info md:w-1/2">
+                    <div class="contact-item flex items-start mb-4">
+                        <span class="contact-icon text-2xl mr-3">📞</span>
+                        <div>
+                            <strong>Телефон:</strong>
+                            <a href="tel:+375296125240" class="text-blue-600 hover:underline">+375(296) 125-240</a>
+                        </div>
+                    </div>
+                    <div class="contact-item flex items-start mb-4">
+                        <span class="contact-icon text-2xl mr-3">📧</span>
+                        <div>
+                            <strong>Email:</strong>
+                            <a href="mailto:nrepetueva@gmail.com" class="text-blue-600 hover:underline">nrepetueva@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item flex items-start mb-4">
+                        <span class="contact-icon text-2xl mr-3">💬</span>
+                        <div>
+                            <strong>WhatsApp:</strong>
+                            <a href="https://wa.me/79991234567 " target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">+375(296) 125-240</a>
+                        </div>
+                    </div>
+                    <div class="contact-item flex items-start">
+                        <span class="contact-icon text-2xl mr-3">✈️</span>
+                        <div>
+                            <strong>Telegram:</strong>
+                            <a href="https://t.me/anna_teacher " target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">@natallia_teacher</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-4">Форма обратной связи</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group mb-4">
+                            <label for="name" class="form-label block mb-2 font-medium">Ваше имя</label>
+                            <input type="text" id="name" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="email" class="form-label block mb-2 font-medium">Email</label>
+                            <input type="email" id="email" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="message" class="form-label block mb-2 font-medium">Сообщение</label>
+                            <textarea id="message" rows="4" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content bg-white rounded-lg max-w-lg mx-auto my-10 p-6 relative">
+            <div class="modal-header">
+                <h3 id="modalTitle" class="text-xl font-bold">Записаться на урок</h3>
+                <button class="modal-close absolute top-4 right-4 text-2xl" aria-label="Закрыть модальное окно" onclick="closeBookingModal()">&times;</button>
+            </div>
+            <div class="modal-body mt-4">
+                <form id="bookingForm" novalidate>
+                    <div class="form-group mb-4">
+                        <label for="childName" class="form-label block mb-2 font-medium">Имя ребенка *</label>
+                        <input type="text" id="childName" name="childName" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="grade" class="form-label block mb-2 font-medium">Возраст/класс *</label>
+                        <select id="grade" name="grade" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">Выберите класс</option>
+                            <option value="1">1 класс</option>
+                            <option value="2">2 класс</option>
+                            <option value="3">3 класс</option>
+                            <option value="4">4 класс</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="subject" class="form-label block mb-2 font-medium">Предмет *</label>
+                        <select id="subject" name="subject" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">Выберите предмет</option>
+                            <option value="math">Математика</option>
+                            <option value="russian">Русский язык</option>
+                            <option value="reading">Чтение</option>
+                            <option value="world">Окружающий мир</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="time" class="form-label block mb-2 font-medium">Желаемое время *</label>
+                        <select id="time" name="time" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">Выберите время</option>
+                            <option value="mon-9">Понедельник 9:00-9:45</option>
+                            <option value="mon-10">Понедельник 10:00-10:45</option>
+                            <option value="mon-11">Понедельник 11:00-11:45</option>
+                            <option value="mon-12">Понедельник 12:00-12:45</option>
+                            <option value="mon-13">Понедельник 13:00-13:45</option>
+                            <option value="mon-14">Понедельник 14:00-14:45</option>
+                            <option value="mon-15">Понедельник 15:00-15:45</option>
+                            <option value="mon-16">Понедельник 16:00-16:45</option>
+                            <option value="mon-17">Понедельник 17:00-17:45</option>
+                            <option value="mon-18">Понедельник 18:00-18:45</option>
+                            <option value="mon-19">Понедельник 19:00-19:45</option>
+                            <option value="tue-9">Вторник 9:00-9:45</option>
+                            <option value="tue-10">Вторник 10:00-10:45</option>
+                            <option value="tue-11">Вторник 11:00-11:45</option>
+                            <option value="tue-12">Вторник 12:00-12:45</option>
+                            <option value="tue-13">Вторник 13:00-13:45</option>
+                            <option value="tue-14">Вторник 14:00-14:45</option>
+                            <option value="tue-15">Вторник 15:00-15:45</option>
+                            <option value="tue-16">Вторник 16:00-16:45</option>
+                            <option value="tue-17">Вторник 17:00-17:45</option>
+                            <option value="tue-18">Вторник 18:00-18:45</option>
+                            <option value="tue-19">Вторник 19:00-19:45</option>
+                            <option value="wed-9">Среда 9:00-9:45</option>
+                            <option value="wed-10">Среда 10:00-10:45</option>
+                            <option value="wed-11">Среда 11:00-11:45</option>
+                            <option value="wed-12">Среда 12:00-12:45</option>
+                            <option value="wed-13">Среда 13:00-13:45</option>
+                            <option value="wed-14">Среда 14:00-14:45</option>
+                            <option value="wed-15">Среда 15:00-15:45</option>
+                            <option value="wed-16">Среда 16:00-16:45</option>
+                            <option value="wed-17">Среда 17:00-17:45</option>
+                            <option value="wed-18">Среда 18:00-18:45</option>
+                            <option value="wed-19">Среда 19:00-19:45</option>
+                            <option value="thu-9">Четверг 9:00-9:45</option>
+                            <option value="thu-10">Четверг 10:00-10:45</option>
+                            <option value="thu-11">Четверг 11:00-11:45</option>
+                            <option value="thu-12">Четверг 12:00-12:45</option>
+                            <option value="thu-13">Четверг 13:00-13:45</option>
+                            <option value="thu-14">Четверг 14:00-14:45</option>
+                            <option value="thu-15">Четверг 15:00-15:45</option>
+                            <option value="thu-16">Четверг 16:00-16:45</option>
+                            <option value="thu-17">Четверг 17:00-17:45</option>
+                            <option value="thu-18">Четверг 18:00-18:45</option>
+                            <option value="thu-19">Четверг 19:00-19:45</option>
+                            <option value="fri-9">Пятница 9:00-9:45</option>
+                            <option value="fri-10">Пятница 10:00-10:45</option>
+                            <option value="fri-11">Пятница 11:00-11:45</option>
+                            <option value="fri-12">Пятница 12:00-12:45</option>
+                            <option value="fri-13">Пятница 13:00-13:45</option>
+                            <option value="fri-14">Пятница 14:00-14:45</option>
+                            <option value="fri-15">Пятница 15:00-15:45</option>
+                            <option value="fri-16">Пятница 16:00-16:45</option>
+                            <option value="fri-17">Пятница 17:00-17:45</option>
+                            <option value="fri-18">Пятница 18:00-18:45</option>
+                            <option value="fri-19">Пятница 19:00-19:45</option>
+                            <option value="sat-10">Суббота 10:00-10:45</option>
+                            <option value="sat-11">Суббота 11:00-11:45</option>
+                            <option value="sat-14">Суббота 14:00-14:45</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="lessonType" class="form-label block mb-2 font-medium">Тип урока *</label>
+                        <select id="lessonType" name="lessonType" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">Выберите тип урока</option>
+                            <option value="trial">Пробный урок</option>
+                            <option value="regular">Регулярные занятия</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="phone" class="form-label block mb-2 font-medium">Телефон родителя *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="parentEmail" class="form-label block mb-2 font-medium">Email родителя *</label>
+                        <input type="email" id="parentEmail" name="email" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="comments" class="form-label block mb-2 font-medium">Дополнительные комментарии</label>
+                        <textarea id="comments" name="comments" rows="3" class="form-control w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width w-full px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50" aria-hidden="true" role="dialog" aria-labelledby="successModalTitle">
+        <div class="modal-content bg-white rounded-lg max-w-md mx-auto my-10 p-6 relative">
+            <div class="modal-header">
+                <h3 id="successModalTitle" class="text-xl font-bold">Заявка отправлена!</h3>
+                <button class="modal-close absolute top-4 right-4 text-2xl" aria-label="Закрыть модальное окно" onclick="closeSuccessModal()">&times;</button>
+            </div>
+            <div class="modal-body mt-4">
+                <p>Спасибо за вашу заявку! Я свяжусь с вами в ближайшее время для подтверждения времени урока.</p>
+                <button class="btn btn--primary mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors" onclick="closeSuccessModal()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Функции открытия и закрытия модальных окон
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+
+        // Обработка формы записи
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Здесь должна быть логика отправки формы
+            
+            // Для демонстрации просто скрываем форму и показываем успешное сообщение
+            this.reset();
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('hidden');
+        });
+
+        // Обработка формы обратной связи
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Здесь должна быть логика отправки формы
+            
+            // Для демонстрации просто сбрасываем форму и выводим сообщение
+            this.reset();
+            alert('Спасибо за ваше сообщение!');
+        });
+
+        // Мобильное меню
+        document.querySelector('.navbar-toggle').addEventListener('click', function() {
+            const menu = document.querySelector('.navbar-menu');
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
